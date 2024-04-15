@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Title -->
+    <title>Minmo Home | Essential Living</title>
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+     <!-- jQuery library for JavaScript functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+    <!-- External libraries for additional features -->
+    <!--Swiper: carousel functionality-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!--AOS: scroll animations-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Kursor: custom cursor effects-->
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    
+</head>
+
+<body id="top">
+    <!-- Wrapper for sidebar and content -->
+    <div id="wrapper">
+        <!-- Sidebar for navigation and social media links -->
+        <div id="sidebar">
+            <div id="sidebarWrap">
+                <!-- Logo -->
+                <h1><img src="/assets/images/logo01.png" alt="Minmo Logo" id="logo"></h1>
+                <!-- Main navigation menu -->
+                <nav id="mainnav">
+                    <!-- Mobile menu toggle button -->
+                    <p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+                    <div class="panel">
+                        <!-- Navigation links -->
+                        <ul>
+                            <li><a href="#top">TOP</a></li>
+                            <li><a href="#sec01">ABOUT US</a></li>
+                            <li><a href="#sec02">PRODUCTS</a></li>
+                            <li><a href="#sec03">CONTACT</a></li>
+
+                        </ul>
+                        <!-- Social media icons -->
+                        <ul id="sns">
+                            <li><a href="#" target="_blank"><img src="/assets/images/iconFb.png" alt="FB" class="social-icon"></a></li>
+                            <li><a href="#" target="_blank"><img src="/assets/images/iconTw.png" alt="twitter" class="social-icon"></a></li>
+                            <li><a href="#" target="_blank"><img src="/assets/images/iconInsta.png" alt="Instagram" class="social-icon"></a></li>
+                            <li><a href="#" target="_blank"><img src="/assets/images/iconYouTube.png" alt="You Tube" class="social-icon"></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main content area -->
+        <div id="content">
+            <div class="swiper-frame">
+            <!-- Main image carousel -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                <!-- Each slide in the carousel -->
+                  <div class="swiper-slide"><p id="mainImg"><img src="/assets/images/mainImg1.jpg" alt="April, 2024: Monthly Recommed Furnitures"></p></div>
+                  <div class="swiper-slide"><p id="mainImg"></p><img src="/assets/images/mainImg2.jpg" alt="How to Choose a Working Desk"></p></div>
+                  <div class="swiper-slide"><p id="mainImg"></p><img src="/assets/images/mainImg4.jpg" alt="Room Makeover: colorful collection"></p></div>
+                  <!-- Scrollbar for the swiper -->
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+            <!-- About Us section -->
+            <section id="sec01">
+                <header>
+                    <h2><span>About Us</span></h2>
+                    <div data-aos="fade-up" data-aos-delay="50"><img src="/assets/images/imgProject1.jpg" alt="Essential Living | Refined Spaces"></div>
+                </header>
+                <div class="innerS">
+                    <!-- Description paragraphs -->
+                    <p>Mínmo Home stands at the intersection of minimalist design living in Toronto.</p><br>
+                    <p>Our mission is clear: to furnish your space with pieces that embody simplicity, functionality, and timeless beauty.</p><br>
+                </div>
+            </section>
+
+            <!-- Products section -->
+            <section id="sec02">
+                <header>
+                    <h2><span>Products</span></h2>
+                </header>
+                <ul id="gallery">
+                     <!-- Product images with hover text -->
+                        <li class="image-with-text">
+                            <img src="/assets/images/photo01.jpg" alt="sofa">
+                            <div class="hover-text">Sofa</div>
+                        </li>
+
+                        <li class="image-with-text">
+                            <img src="/assets/images/photo02.jpg" alt="chair">
+                            <div class="hover-text">Chair</div>
+                        </li>
+
+                        <li class="image-with-text">
+                            <img src="/assets/images/photo03.jpg" alt="table">
+                            <div class="hover-text">Table</div>
+                        </li>
+                        <li class="image-with-text">
+                            <img src="/assets/images/photo04.jpg" alt="tv carbinet">
+                            <div class="hover-text">TV Carbinet</div>
+                        </li>
+                        <li class="image-with-text">
+                            <img src="/assets/images/photo05.jpg" alt="dinning table set">
+                            <div class="hover-text">Dinning Table Set</div>
+                        </li>
+                        <li class="image-with-text">
+                            <img src="/assets/images/photo06.jpg" alt="bed">
+                            <div class="hover-text">Bed</div>
+                        </li>
+                </div>
+                </ul>
+            </section>
+
+            <!-- Contact section -->
+            <section id="sec03">
+                <header>
+                    <h2><span>CONTACT</span></h2>
+                </header>
+
+                <div class="inner">
+                    <ul class="col2">
+                        <!-- Contact information -->
+                        <li>
+                            <p>Address: 610 Queen St W, Toronto, ON M6J 1E3</p>
+                            <p>Phone: (416) 364-6664</p>
+                            <p>e-Mail: info@minmohome.ca</p>
+                            <p>Hours:  10 a.m. - 6 p.m. (Mon - Fri)</p>
+                        </li>
+
+                        <li>
+                            <div id="map">
+                            <!-- Google Maps embed -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5774.101219742189!2d-79.40753132365063!3d43.64711537110244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34e7300b9b2d%3A0xb18fe89255b18ca8!2sUrban%20Barn%20Queen%20West!5e0!3m2!1sen!2sca!4v1710720236368!5m2!1sen!2sca" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- External JavaScript libraries for features -->
+            <!--Swiper JS Library-->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!--AOS JS Library-->
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+            <!--Kursor JS Library-->
+            <script src="https://unpkg.com/kursor"></script>
+
+            <!--Mo.js JS Library-->
+            <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+            
+            <!--Main JS-->
+            <script src="assets/js/main.js"></script>
+    
+</body>
+</html>
+

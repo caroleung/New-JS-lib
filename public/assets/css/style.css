@@ -1,0 +1,489 @@
+/* Importing fonts from Google Fonts */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Modern+Antiqua);
+
+/* Basic reset for padding to ensure consistency across browsers */
+body, html {
+    padding: 0;
+  }
+  
+/* Sets the default background color for the body */
+  body {
+    background: #333;
+  }
+
+/* Sets default font size for h1 elements */
+  h1 {
+    font-size:100%;
+}
+
+/* Removes list styling for unordered lists*/
+ul {
+    list-style:none;
+}
+
+/* Resets margin and padding for several elements to ensure a consistent starting point */
+body,div,ul,li,h1,p {
+    margin:0;padding:0;
+}
+
+/* Ensures images don't have a border unless specified */
+img {
+    border:0;
+}
+
+/* Sets default font properties for the body, and ensures text size is adjusted for mobile devices */
+body{
+    font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+    font-weight: 300;
+    -webkit-text-size-adjust:100%;
+    overflow-x: hidden;
+    color: #000;
+    background: #fff;
+}
+
+/* Styles for anchor tags, removing underline by default and changing color */
+a{
+    color: #0066ff;
+    text-decoration: none;
+}
+
+/* Adds underline to anchor tags on hover*/
+a:hover, .active{
+  text-decoration: underline;
+}
+
+/* Removes outline for active/focused anchor tags and inputs*/
+a:active, a:focus,input:active, input:focus{outline:0;}
+
+/* Navigation Styles */
+#mainnav a{
+    color: #000;
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+/* Defines size for the logo*/
+#logo {
+    width: 87px;
+    height: 87px;
+}
+
+/* Footer Styles */
+#footer{
+    clear: both;
+    padding: 50px 10px 50px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Styles for social media icons' size */
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Sets the font family for headings */
+h1, h2{
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+/* Ensures images are responsive */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Clears floats for sections for proper layout */
+section{
+  clear: both;
+}
+
+/* Styles for section headings */
+section h2{
+    width: 60%;
+    margin: 70px auto;
+    font-size: 22px;
+    font-weight:normal;
+    text-align: center;
+}
+
+/* Underline style for section titles */
+section h2 span {
+    padding-bottom: 20px;
+    border-bottom: 3px solid #000;
+}
+
+/* Defines the inner container width, margin, and padding for sections */
+.inner{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+/* Special styling for inner containers of sections 2 and 3 */
+#sec02 .inner, #sec03 .inner{
+    border-bottom: 1px solid #a0a0a0;
+}
+
+/* Smaller inner container with more padding for specific sections */
+.innerS{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+/*Products Section Style*/
+#sec02{
+    padding: 0;
+}
+
+#sec02 header{
+    display: none;
+}
+
+#gallery{
+    overflow: hidden;
+}
+
+#gallery li{
+    float: left;
+    width: calc(100%/3);
+    line-height: 0;
+}
+#gallery li.full{
+    width: 100%;
+}
+
+#gallery img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#gallery .image-with-text img {
+    width: 340px;
+    height: 340px;
+}
+
+/* Image and hover text styles for products items */
+.image-with-text {
+    position: relative; 
+    display: inline-block; 
+    margin: 0; 
+  }
+  
+  .image-with-text img {
+    display: block; 
+    width: 360px; 
+    height: 350px; 
+  }
+  
+  .hover-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7); /* Semi-transparent background */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Hide text initially */
+    transition: opacity 0.5s ease; /* Smooth transition for the hover effect */
+    pointer-events: none; /* Let mouse events pass through to the image below */
+    font: 18px/1.9 'Noto Sans JP';
+  }
+  
+  .image-with-text:hover .hover-text {
+    opacity: 1; /* Show text on hover */
+    font: 18px/1.9 'Noto Sans JP';
+  }
+
+
+
+
+/* Responsive Design Settings */
+/* Various responsive design adjustments for different screen widths */
+@media only screen and (min-width: 800px){
+    body{
+        font-size:14px;
+    }
+
+/* Ensure the wrapper takes the full width of the viewport */
+    #wrapper{
+        width: 100%;
+    }
+    
+/* Set the main content area to 80% of the wrapper's width for a centered look */
+    #content{
+        width: 80%;
+    }
+    
+/* Style the sidebar to be fixed on the page and specify its width and position */
+    #sidebar{
+        width: 12%;
+        position: fixed;
+        top: 0;
+        right: 4%;
+        background: #fff;
+    }
+    
+/* Hide the mobile menu button on larger screens */
+  a#menu{
+        display:none;
+    }   
+
+/* Ensure the navigation panel is always displayed on larger screens */
+    .panel{
+        display:block !important;
+    }
+    
+/* Adjust padding for the logo within the sidebar for alignment */
+    #sidebar h1{
+        padding: 30px 0;
+    }
+
+/* Set font size and padding for navigation list items */
+    #mainnav li{
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+/* Adjust the social navigation icons' spacing and make them inline */
+    #sns{
+        margin-top: 50px;
+    }
+
+    #sns li{
+        display: inline-block;
+        padding-right: 10px;
+    }
+
+/* Slight transparency effect on social icons upon hover */
+    #sns a:hover img{
+        opacity: .8;
+    }
+    
+/* Contact Us Section: Align items to center and adjust layout for individual items */
+    .col4{
+        text-align: center;
+    }
+
+    .col4 li{
+        display: inline-block;
+        width: 18%;
+        padding: 0 3%;
+        vertical-align: top;
+        text-align: left;
+    }
+
+/* Ensure the embedded map has a fixed height */
+    #map iframe{
+        height: 200px ;
+  }
+
+/* Adjust footer padding and positioning */
+  #footer{
+        padding: 30px 10px 70px 0;
+    }
+}
+
+/* Adjustments for screens wider than 641px but smaller than 800px */
+@media only screen and (min-width: 641px){
+    .col2 li{
+        width: 60%;
+        vertical-align: top;
+    }
+    .col2 li:first-child{
+        width: 35%;
+        padding-right: 4%;
+    }
+
+}
+
+/* Adjustments for screens smaller than or equal to 640px */
+@media only screen and (max-width: 640px){
+    .innerS{
+        width: 94%;
+        padding-bottom: 30px;       
+    }
+
+    /*Swiper size adjustment*/
+    .swiper-frame {
+        max-height: 300px; 
+        overflow-y: auto; /* Enable vertical scrolling*/
+        padding-top: 60px; /* Space for the top navigation*/
+    }
+
+/* Stack product items instead of floating them side by side */
+    #gallery li{
+        float: none;
+        width: 100%;
+    }
+
+/* Adjust map width to be more responsive */
+    #map iframe{
+        width: 96%;
+        left: 2%;
+    }
+
+/* Adjustments for screens smaller than or equal to 799px */
+@media only screen and (max-width: 799px){
+    #sidebar{
+        position: fixed;
+        width: 100%;
+        z-index:500;
+    }
+}
+
+/* Adjust sidebar wrapper for mobile, including height and border */
+    #sidebarWrap{
+        position: relative;
+        width: 100%;
+        height: 60px;
+        background: #fff;
+        border-bottom: 1px solid #ccc;
+    }
+
+/* Position the logo on the left and adjust its size within the mobile sidebar */
+    #sidebar h1{
+        text-align: left;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+    
+    #sidebar h1 img{
+        width: auto;
+        max-height: 50px;
+    }
+
+/* Style adjustments for the mobile menu button */
+  a#menu{
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+
+    #menuBtn{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 2px;
+    margin: -1px 0 0 -7px;
+    background: #000;
+    transition: .2s;
+    }
+
+    #menuBtn:before, #menuBtn:after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 18px;
+    height: 2px;
+    background: #000;
+    transition: .3s;
+    }
+
+    #menuBtn:before{
+    margin-top: -7px;
+    }
+
+    #menuBtn:after{
+    margin-top: 5px;
+    }
+
+/* Transformations for the menu button when in the "close" state */
+    a#menu .close{
+    background: transparent;
+    }
+
+    a#menu .close:before, a#menu .close:after{
+    margin-top: 0;
+    }
+
+    a#menu .close:before{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    }
+
+    a#menu .close:after{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    }
+
+/* Hide the panel by default on mobile and adjust positioning */
+    .panel{
+        width: 100%;
+        display: none;
+        overflow: hidden;
+        position: relative;
+        left: 0;
+        top: -10px;
+        z-index: 100;
+    }
+
+/* Adjust the navigation menu layout for mobile */
+    #mainnav{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: right;
+    }
+
+    #mainnav ul{
+        border-bottom: 1px solid #ccc;
+        background: #fff;
+        text-align: left;
+    }
+
+    #mainnav li a{
+        position: relative;
+        display: block;
+        padding: 15px 25px;
+        border-bottom: 1px solid #ccc;
+        color: #000;
+        font-weight: 400;
+    }
+    #mainnav li a:before{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        width: 6px;
+        height: 6px;
+        margin: -4px 0 0 0;
+        border-top: solid 2px #000;
+        border-right: solid 2px #000;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    #mainnav #sns li{
+        display: inline-block;
+    }
+    #mainnav #sns li a{
+        position: relative;
+        display: inline-block;
+        padding: 15px 10px 0;
+        border: 0;
+    }
+    #mainnav #sns li a:before{
+        border: 0;
+    }
+    .col4 li{
+        margin: 0 auto 50px;
+        display: block;
+        text-align: center;
+    }
+    section h2{
+        margin: 55px auto;
+    }
+}
+
